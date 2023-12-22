@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Code from class slides, which links CSS to html-->
+        <link rel="stylesheet" href="style/style.css"/>
+        <title>KSEA Idaho</title>
+        <link rel="icon" type="image/x-icon" href="/images/ksea_logo.png">
+    </head>
+
+    <body>
+
+        <div class = "background">
+            <div id = "primary_navbar">
+                <div class = "title">
+                    <img src="images/ksea_logo.png" id="logo"/>
+                    <h1 id = "header"> <a href="index.html">KSEA Idaho</a></h1>
+                </div>
+                <nav class ="desktop">
+                    <ul id = "a">
+                        <li class = "bullet"><a href="#about">About</a></li>
+                        <li class = "bullet"><a href="#">People</a></li>
+                        <li class = "bullet"><a href="#">Events</a></li>
+                        <li class = "bullet"><a href="#">Contact</a></li>
+                        <li class = "bullet"><a href="https://www.ksea.org/about-membership">Membership</a></li>
+                        <!--Image from https://pixabay.com/images-->
+                    </ul>
+                </nav>
+                <nav class="mobile">
+                    <button id = "hamb" type = "button" onclick="myFunction()">&#9776</button>
+                    <ul id = "dropdown">
+                        <li class = "bullet2"><a href="#about">About</a></li>
+                        <li class = "bullet2"><a href="#">People</a></li>
+                        <li class = "bullet2"><a href="#">Events</a></li>
+                        <li class = "bullet2"><a href="#">Contact</a></li>
+                        <li class = "bullet2"><a href="#">Membership</a></li>
+                        <!--Image from https://pixabay.com/images-->
+                    </ul>
+                </nav>
+            </div>
+            <div class = "section1">
+                <div id = "nameholder">
+                <h2 id = "title2"> Korean-American Scientists and Engineers Association</h2>
+                <div class = "buttondiv">
+                    <button type = "button" class = "button">About Us</button>
+                    <button type = "button" class = "button">Contact Us</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "about">
+            <div class = "separator">
+                <h2 class = "sectheader">About</h2>
+            </div>
+            <div id = "centralizer">
+                <div class = "aboutsection">
+                    <h3 id = "established">Established in 2015 </h3> 
+                    <div id = "inner-div">
+                        <p class = "inner-paragraph" id = "first">Non-profit professional organization and has grown to over 6,000 registered members with ~ 70 Local Chapters and Branches, ~30 Affiliated Professional Societies, and 13 Technical Groups across the United States. It is open for individuals residing in the U.S.A. who are engaged in science, engineering or a related field. </p>
+                        <p class = "inner-paragraph">The Seattle-WA chapter started in 1975 as the 15th chapter. As of January 2016, the Seattle-WA chapter has over 100 members from various fields with diverse background.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "infoboxes">
+            <div class = "infobox">
+                <h3 class = "infotitle">Mission </h3> 
+                    <div id = "mission">
+                        <p class = "inner-paragraph">KSEA is a professional organization promoting science, cooperation between the U.S. and Korea, and a career network for Korean-American scientists and engineers. </p>
+                        <p class = "inner-paragraph">Through KSEA, members can get excellent networking opportunities via local chapter activities and national events.</p>
+                    </div>
+            </div>
+            <div class = "infobox">
+                <h3 class = "infotitle">KSEA YG </h3> 
+                    <div id = "YG">
+                        <p class = "inner-paragraph">The KSEA Seattle Young Generation (YG) chapter, a part of a larger national KSEA organization, is a networking organization where young generation can meet, communicate, take leadership roles in running local events, and help each other.</p>
+                    </div>
+            </div>
+            <div class = "infobox">
+                <h3 class = "infotitle">What We Do </h3> 
+                    <ul id = "WhatWeDo">
+                        <li>National Math and Science Competition (NMSC)</li>
+                        <li>West Regional Conference (WRC)</li>
+                        <li>Academic Seminars</li>
+                        <li>Career Mentoring</li>
+                        <li>Community Service</li>
+                        <li>Networking</li>
+                    </ul>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+    
+</html>
