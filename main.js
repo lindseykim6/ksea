@@ -14,7 +14,7 @@ function myFunction() {
       icon.innerHTML = '&#9776';
     } else {
       x.style.display = "flex";
-      icon.style.fontSize='40px';
+      icon.style.fontSize='40px';x
       icon.style.paddingTop='20px'
       icon.innerHTML ='&#x2715';
     }
