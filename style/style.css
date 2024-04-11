@@ -4,6 +4,11 @@
     padding: 0px;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
 .background{
     display: flex;
     flex-direction: column;
@@ -12,6 +17,13 @@
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
+    max-width: 100%;
+}
+
+.event_background{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.8);
     max-width: 100%;
 }
 
@@ -82,7 +94,7 @@ li.bullet a:hover {
 }
 
 nav.desktop{
-    background: rgba(211, 211, 211, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     margin-left: 10px;
     max-height: 60px;
     display: flex;
@@ -125,9 +137,10 @@ nav.mobile{
     display: flex;
     flex-direction: column;
     max-width: 500px;
-
     justify-content: center;
     align-content: center;
+    height: 500vh;
+
 }
 
 #about {
@@ -143,6 +156,20 @@ nav.mobile{
     display: flex;
     flex-direction: column;
     background-image: url("../images/ksea_about.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    height: 50vh;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/images.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -223,8 +250,167 @@ nav.mobile{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+#people {
+    margin-bottom: 15%;
+}
+
+#peoplepics{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+
+.peoplebox {
+    width: 20%;
+    margin: 4% 4% 0% 4%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    text-align: center;
+}
+
+.peoplepic {
+    width: 100%;
+    height: 100%;  
+}
+
+.peoplepic img{
+    width: 200px;
+    height: 300px;
+    object-fit:cover;
+    resize: both;
+}
+
 #WhatWeDo {
+    width: 100%;
+    display: flex;
     padding-left: 10%;
+}
+
+.paragraph {
+    margin: 3%;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: rgba(215, 215, 215, 0.8);
+}
+
+
+#contact-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+#contact-div img {
+    width: 7%;
+    height: 7%;
+}
+
+#contact-us {
+    width: 40%;
+    height: 50%;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+#events {
+    width: 90%;
+    height: 100%;
+    margin: 5% 5% 0% 5%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#upcoming {
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin:20% 0% 20% 0%;
+    font-size: 20px;
+}
+
+#latest {
+    display: flex;
+    margin: 0% 5% 4% 5%;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.past-event{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.event {
+    width: 50%;
+    margin: 0% 5% 0% 5%;
+    text-align: left;
+}
+
+#event-picture {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5% 0% 0%;
+
+    align-items: center;
+    justify-content: center;
+    width: 40%
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 70;
+}
+
+.event-title {
+    display: flex;
+    margin: 10% 5% 5% 5%;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 40;
+}
+
+.event-description {
+    display: flex;
+    margin: 5% 5% 5% 5%;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 30;
 }
 
 @media only screen and (max-width: 900px) {
@@ -238,6 +424,8 @@ nav.mobile{
         width: 20px;
         
     }
+
+    nav.desktop { display: none;}
 
     #dropdown {
         display: none;
@@ -329,8 +517,6 @@ nav.mobile{
         height: 55px;
         width: 55px;
     }
-
-    nav.desktop { display: none;}
     
     .separator {
         display: flex;
@@ -339,7 +525,7 @@ nav.mobile{
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.6;
+        opacity: 0.9;
         max-width: 100%;
         align-items: center;
         height: 30vh;
@@ -384,5 +570,149 @@ nav.mobile{
         padding-left: 8%;
     }
 
+    #peoplepics{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4%;
+    } 
     
+    .peoplebox {
+        display: flex;
+        width: 50%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: 0%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .peoplepic {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .peoplepic img{
+        width: 200px;
+        height: 300px;
+        object-fit:cover;
+        resize: vertical;
+    }
+
+    #contact {
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: rgba(215, 215, 215, 0.8);
+    }
+    
+    
+    #contact-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+    
+    #contact-div img {
+        width: 15%;
+        height: 15%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+    
+    #contact-us {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+    #email {
+        display: flex;
+        align-items: center;
+        font-family:Arial, Helvetica, sans-serif;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+#events {
+    width: 90%;
+    height: 100%;
+    margin: 5% 5% 0% 5%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#latest {
+    display: flex;
+    margin: 0% 5% 4% 5%;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.past-event{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.event {
+    width: 100%;
+    margin: 0% 5% 0% 5%;
+    text-align: left;
+}
+
+#event-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 70;
+}
+
+.event-title {
+    display: flex;
+    margin: 5% 5% 5% 5%;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: 40;
+}
+
+.event-description {
+    display: flex;
+    margin: 5% 5% 5% 5%;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 30;
+}
 }

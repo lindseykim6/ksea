@@ -1,8 +1,5 @@
 var inner = document.getElementById("inner-div");
 var established = document.getElementById("established");
-established.style.height= inner.style.height;
-console.log(established.style.height);
-console.log(inner.style.height);
 
 function myFunction() {
     var x = document.getElementById("dropdown");
@@ -18,4 +15,14 @@ function myFunction() {
       icon.style.paddingTop='20px'
       icon.innerHTML ='&#x2715';
     }
+    
 }
+
+document.getElementById("event-button").onclick = function () {
+  location.href = "../events.html";
+};
+
+document.getElementById("contact-button").onclick = function () {
+  location.href = "../index.html#contact";
+};
+

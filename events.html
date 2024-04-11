@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="google-site-verification" content="G4qpUQg9PuBsdvwnT5nQsjSnE81UvG2LDcSRL6PBDbA" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Code from class slides, which links CSS to html-->
+        <link rel="stylesheet" href="style/style.css"/>
+        <title>KSEA Idaho</title>
+        <script type = "application/ld+json">
+            { "@context" : "https://"
+                "@type" : "WebSite"
+                "name": "KSEA Idaho"
+                "description": "KSEA Idaho Chapter"
+
+            }
+        </script>
+        <link rel="icon" type="image/x-icon" href="/images/ksea_logo.png">
+    </head>
+
+    <body>
+
+        <div class = "event_background">
+            <div id = "primary_navbar">
+                <div class = "title">
+                    <img src="images/ksea_logo.png" id="logo"/>
+                    <h1 id = "header"> <a href="index.html">KSEA Idaho</a></h1>
+                </div>
+                <nav class ="desktop">
+                    <ul id = "a">
+                        <li class = "bullet"><a href="index.html#about">About</a></li>
+                        <li class = "bullet"><a href="index.html#people">People</a></li>
+                        <li class = "bullet"><a href="events.html">Events</a></li>
+                        <li class = "bullet"><a href="index.html#contact">Contact</a></li>
+                        <li class = "bullet"><a href="https://www.ksea.org/about-membership">Membership</a></li>
+                        <!--Image from https://pixabay.com/images-->
+                    </ul>
+                </nav>
+                <nav class="mobile">
+                    <button id = "hamb" type = "button" onclick="myFunction()">&#9776</button>
+                    <ul id = "dropdown">
+                        <li class = "bullet2"><a href="index.html#about">About</a></li>
+                        <li class = "bullet2"><a href="index.html#people">People</a></li>
+                        <li class = "bullet2"><a href="events.html">Events</a></li>
+                        <li class = "bullet2"><a href="index.html#contact">Contact</a></li>
+                        <li class = "bullet2"><a href="https://www.ksea.org/about-membership">Membership</a></li>
+                        <!--Image from https://pixabay.com/images-->
+                    </ul>
+                </nav>
+            </div>
+            <div id = "events">
+                <div id = "upcoming">
+                    <p>There are no upcoming events.</p>
+                </div>
+                <div id = "latest">
+                    <p>Past Events</p>
+                </div>
+                <div class = "past-event">
+                    <div class = "event">
+                        <h5 class = "event-date">September 16, 2020</h5> 
+                        <h5 class = "event-title">Idaho Chapter Inauguration Meeting</h5> 
+                        <h5 class = "event-description">Discussed logistics for meetings and current state of affairs.</h5> 
+                    </div>
+                    <div id = "event-picture">
+                        <img src="images/ksea-inauguration.JPG"/>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+
+        <script src="main.js"></script>
+
+    </body>

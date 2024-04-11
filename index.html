@@ -6,6 +6,14 @@
         <!--Code from class slides, which links CSS to html-->
         <link rel="stylesheet" href="style/style.css"/>
         <title>KSEA Idaho</title>
+        <script type = "application/ld+json">
+            { "@context" : "https://"
+                "@type" : "WebSite"
+                "name": "KSEA Idaho"
+                "description": "KSEA Idaho Chapter"
+
+            }
+        </script>
         <link rel="icon" type="image/x-icon" href="/images/ksea_logo.png">
     </head>
 
@@ -20,9 +28,9 @@
                 <nav class ="desktop">
                     <ul id = "a">
                         <li class = "bullet"><a href="#about">About</a></li>
-                        <li class = "bullet"><a href="#">People</a></li>
-                        <li class = "bullet"><a href="#">Events</a></li>
-                        <li class = "bullet"><a href="#">Contact</a></li>
+                        <li class = "bullet"><a href="#people">People</a></li>
+                        <li class = "bullet"><a href="events.html">Events</a></li>
+                        <li class = "bullet"><a href="#contact">Contact</a></li>
                         <li class = "bullet"><a href="https://www.ksea.org/about-membership">Membership</a></li>
                         <!--Image from https://pixabay.com/images-->
                     </ul>
@@ -42,15 +50,15 @@
             <div class = "section1">
                 <h2 id = "title2"> Korean-American Scientists and Engineers Association</h2>
                 <div class = "buttondiv">
-                    <button type = "button" class = "button">About Us</button>
-                    <button type = "button" class = "button">Contact Us</button>
+                    <button id="event-button" type = "button" class = "button">Events</button>
+                    <button id="contact-button" type = "button" class = "button">Contact Us</button>
                 </div>
             </div>
         </div>
 
         <div id = "about">
             <div class = "separator">
-                <h2 class = "sectheader">About</h2>
+                <h2 class = "sectheader">About Us</h2>
             </div>
             <div id = "centralizer">
                 <div class = "aboutsection">
@@ -72,6 +80,61 @@
 
             </div>
         </div>
+        <div id = "people">
+            <div class = "separator2">
+                <h2 class = "sectheader">People</h2>
+            </div>
+            <div id = "peoplepics">
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/jae-hyeon-ryu.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Jaehyeon Ryu</p>
+                        <b>President</b>
+                    </div>
+                </div>
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/byung_kim.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Byung Kim</p>
+                        <b>Chair</b>
+                    </div>
+                </div>
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/Unknown_person.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Unknown</p>
+                        <b>Member</b>
+                    </div>
+                </div>
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/Unknown_person.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Unknown</p>
+                        <b>Member</b>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id = "contact">
+            <div id = "contact-div">
+                <img src="images/ksea_logo.png" id="logo"/>
+                <h2 id = "contact-us">Contact Us</h2>
+            </div>
+            <div id = "email">
+                <h3>byungkim@boisestate.edu</h2>
+            </div>
+
+        </div>
+        
         <script src="main.js"></script>
     </body>
     
