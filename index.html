@@ -14,6 +14,7 @@
 
             }
         </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="/images/ksea_logo.png">
     </head>
 
@@ -40,7 +41,7 @@
                     <ul id = "dropdown">
                         <li class = "bullet2"><a href="#about">About</a></li>
                         <li class = "bullet2"><a href="#people">People</a></li>
-                        <li class = "bullet2"><a href="index.html">Events</a></li>
+                        <li class = "bullet2"><a href="events.html">Events</a></li>
                         <li class = "bullet2"><a href="#contact">Contact</a></li>
                         <li class = "bullet2"><a href="https://www.ksea.org/about-membership">Membership</a></li>
                         <!--Image from https://pixabay.com/images-->
@@ -50,8 +51,8 @@
             <div class = "section1">
                 <h2 id = "title2"> Korean-American Scientists and Engineers Association</h2>
                 <div class = "buttondiv">
-                    <button id="event-button" type = "button" class = "button">Events</button>
-                    <button id="contact-button" type = "button" class = "button">Contact Us</button>
+                    <button id="event-button" type = "button" onclick= "navigateEvents()" class = "button">Events</button>
+                    <button id="contact-button" type = "button" class = "button" onclick = "navigateContact()">Contact Us</button>
                 </div>
             </div>
         </div>
@@ -64,6 +65,12 @@
                 <div class = "aboutsection">
                     <h id = "established">Established in 2012</h>
                     <p class = "inner-paragraph">As of January 2024, the Idaho chapter has over 30 members from various fields with diverse backgrounds.</p>
+                    <h3 class = "inner-paragraph2">Download the KSEA 2024 NWRC booklet here</p>
+                    
+                    <a href="/images/NWRC2024_booklet final.pdf" download>
+                        <button class="btn"><i class="fa fa-download"></i> Download</button>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -121,6 +128,24 @@
                         <b>Member</b>
                     </div>
                 </div>
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/Unknown_person.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Unknown</p>
+                        <b>Member</b>
+                    </div>
+                </div>
+                <div class = "peoplebox">
+                    <div class = "peoplepic">
+                        <img src="images/Unknown_person.jpg"/>
+                    </div>
+                    <div class = paragraph>
+                        <p>Unknown</p>
+                        <b>Member</b>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -130,7 +155,7 @@
                 <h2 id = "contact-us">Contact Us</h2>
             </div>
             <div id = "email">
-                <h3>byungkim@boisestate.edu</h2>
+                <p>byungkim@boisestate.edu</h2>
             </div>
 
         </div>

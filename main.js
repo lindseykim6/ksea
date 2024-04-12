@@ -1,5 +1,34 @@
-var inner = document.getElementById("inner-div");
-var established = document.getElementById("established");
+let inner = document.getElementById("inner-div");
+let established = document.getElementById("established");
+
+function navigateEvents() {
+  location.href = "../events.html";
+};
+
+function navigateContact() {
+  location.href = "../index.html#contact";
+};
+
+// from https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function incrementSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("past-event");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "flex";
+}
 
 function myFunction() {
     var x = document.getElementById("dropdown");
@@ -17,12 +46,4 @@ function myFunction() {
     }
     
 }
-
-document.getElementById("event-button").onclick = function () {
-  location.href = "../events.html";
-};
-
-document.getElementById("contact-button").onclick = function () {
-  location.href = "../index.html#contact";
-};
 

@@ -9,6 +9,23 @@ body {
     width: 100%;
 }
 
+.btn {
+    width: 60%;
+    margin-top: 2%;
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
 .background{
     display: flex;
     flex-direction: column;
@@ -23,7 +40,7 @@ body {
 .event_background{
     display: flex;
     flex-direction: column;
-    background-color: rgba(211, 211, 211, 0.8);
+    background-color: rgba(240, 240, 240, 0.8);
     max-width: 100%;
 }
 
@@ -175,6 +192,7 @@ nav.mobile{
     background-position: center;
     opacity: 0.6;
     height: 40vh;
+    border-radius: 50px;
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -199,16 +217,21 @@ nav.mobile{
 
 .aboutsection {
     height: fit-content;
-    margin: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 90%;
+    margin-top: 5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
 .inner-paragraph {
     margin: 10px;
+    font-size: 20px;
+}
+
+.inner-paragraph2 {
+    margin: 5% 0% 5% 0%;
     font-size: 20px;
 }
 
@@ -301,9 +324,9 @@ nav.mobile{
 
 #contact {
     width: 100%;
-    height: 100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
     background-color: rgba(215, 215, 215, 0.8);
 }
 
@@ -314,28 +337,31 @@ nav.mobile{
     justify-content: center;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    margin-bottom: 5%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #contact-div img {
-    width: 7%;
-    height: 7%;
+    width: 50px;
+    height: 50px;
+    margin: 0%
 }
 
 #contact-us {
-    width: 40%;
-    height: 50%;
+    width: 200px;
+    margin: 0%;
 }
 
 #email {
     display: flex;
     align-items: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
+
 
 #events {
     width: 90%;
@@ -357,7 +383,6 @@ nav.mobile{
 
 #latest {
     display: flex;
-    margin: 0% 5% 4% 5%;
     flex-direction: column;
     align-items: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -368,10 +393,13 @@ nav.mobile{
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 15%;
+    height: 40vh;
 }
 
 .event {
-    width: 50%;
+    width: 45%;
+    height: 40vh;
     margin: 0% 5% 0% 5%;
     text-align: left;
 }
@@ -379,11 +407,12 @@ nav.mobile{
 #event-picture {
     display: flex;
     flex-direction: column;
-    margin: 0% 5% 0% 0%;
-
     align-items: center;
     justify-content: center;
-    width: 40%
+    width: 500px;
+    height: 300px;
+    object-fit:cover;
+    resize: vertical;
 }
 
 .event-date {
@@ -396,7 +425,7 @@ nav.mobile{
 
 .event-title {
     display: flex;
-    margin: 10% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -406,11 +435,53 @@ nav.mobile{
 
 .event-description {
     display: flex;
-    margin: 5% 5% 5% 5%;
+    width: 90%;
+    margin: 5% 5% 5% 8%;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    font-weight: 30;
+    font-weight: 100;
+    
+}
+
+#past-events {
+    width: 90%;
+}
+
+.past-event {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#carousel {
+    display: flex;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+#carousel-navigate {
+    width: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    margin-right: 3%;
+    text-align: center;
+}
+.next {
+    margin-left: 3%;
+    text-align: center;
+}
+  
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
 }
 
 @media only screen and (max-width: 900px) {
@@ -606,11 +677,12 @@ nav.mobile{
         resize: vertical;
     }
 
+
     #contact {
         width: 100%;
-        height: 100%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        height: 80px;
+        padding-top: 50px;
+        padding-bottom: 120px;
         background-color: rgba(215, 215, 215, 0.8);
     }
     
@@ -618,101 +690,108 @@ nav.mobile{
     #contact-div {
         display: flex;
         align-items: center;
-        flex-direction: column;
         justify-content: center;
         text-align: center;
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        margin-bottom: 5%;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     #contact-div img {
-        width: 15%;
-        height: 15%;
-        margin-left: 2%;
-        margin-bottom: 5%;
+        width: 50px;
+        height: 50px;
+        margin: 0%
     }
     
     #contact-us {
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 50%;
+        width: 200px;
+        margin: 0%;
     }
+    
     #email {
         display: flex;
         align-items: center;
         font-family:Arial, Helvetica, sans-serif;
         justify-content: center;
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
     }
 
+    #events {
+        width: 90%;
+        height: 100%;
+        margin: 5% 5% 0% 5%;
+        min-height: 100vh;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 
-#events {
-    width: 90%;
-    height: 100%;
-    margin: 5% 5% 0% 5%;
-    min-height: 100vh;
-    background-color: rgba(255, 255, 255, 0.8);
-}
+    #latest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
 
-#latest {
-    display: flex;
-    margin: 0% 5% 4% 5%;
-    flex-direction: column;
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
+    .past-event{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+        height: 60vh;
+    }
 
-.past-event{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
-}
+    .event {
+        width: 100%;
+        text-align: left;
+    }
 
-.event {
-    width: 100%;
-    margin: 0% 5% 0% 5%;
-    text-align: left;
-}
+    #event-picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 0% 5% 0%;
+        width: 80%
+    }
 
-#event-picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%
-}
+    .event-date {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 70;
+    }
 
-.event-date {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 70;
-}
+    .event-title {
+        display: flex;
+        margin: 6% 5% 6% 5%;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: 40;
+    }
 
-.event-title {
-    display: flex;
-    margin: 5% 5% 5% 5%;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: underline;
-    font-weight: 40;
-}
+    .event-description {
+        width: 90%;
+        display: flex;
+        padding: 0% 0% 0% 2%;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 100;
+    }
 
-.event-description {
-    display: flex;
-    margin: 5% 5% 5% 5%;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 30;
-}
+    #past-events{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
 }

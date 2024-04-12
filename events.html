@@ -52,16 +52,137 @@
                     <p>There are no upcoming events.</p>
                 </div>
                 <div id = "latest">
-                    <p>Past Events</p>
-                </div>
-                <div class = "past-event">
-                    <div class = "event">
-                        <h5 class = "event-date">September 16, 2020</h5> 
-                        <h5 class = "event-title">Idaho Chapter Inauguration Meeting</h5> 
-                        <h5 class = "event-description">Discussed logistics for meetings and current state of affairs.</h5> 
+                    <div id = "carousel">
+                        <p id = "past-events">Past Events</p>
+                        <!-- from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                        <div id = "carousel-navigate">
+                            <a class="prev" onclick="incrementSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="incrementSlides(1)">&#10095;</a>
+                        </div>
                     </div>
-                    <div id = "event-picture">
-                        <img src="images/ksea-inauguration.JPG"/>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">September 16, 2020</h5> 
+                            <h5 class = "event-title">Idaho Chapter Inauguration Meeting</h5> 
+                            <ul class = "event-description">
+                                <li>Discussed logistics for meetings and current state of affairs.</li>
+                            </ul> 
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/ksea-inauguration.JPG"/>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">November 11-13, 2022</h5> 
+                            <h5 class = "event-title">KSEA NWRC + KOCSEA + CHANGBAL 2022</h5> 
+                            <ul class = "event-description">
+                                <li>From the Idaho Chapter, 9 chapter members (1UG+8R) participated in the event.</li> 
+                                <li>Four (out of 9) became new KSEA members</li> 
+                                <li>Location: The Westin Seattle Hotel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">January 22, 2023</h5> 
+                            <h5 class = "event-title">2023 KSEA Boise Idaho Chapter New Year Event</h5> 
+                            <ul class = "event-description">
+                                <li>Ten local middle and high school students made power point presentations and
+                                    demonstrations of individual Arduino projects.</li> 
+                                <li>The students and their parents had fun game time after dinner.</li> 
+                                <li>Date: 5pm – 6pm on Every Friday (September 2023- December 2023).</li>
+                                <li>Location: Harris Ranch Mill District Club House in Boise, Idaho</li>
+                            </ul>
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/nye.png"/>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">March 3, 2023</h5> 
+                            <h5 class = "event-title">KSEA Idaho Chapter Leadership Meeting</h5> 
+                            <ul class = "event-description">
+                                <li>To discuss plans for NMSC/Physics</li> 
+                                <li>Participants: Prof. Byung Kim (BSU), Prof. Jae Ryu (UI), Dr. Hyun Tae Kim (Aptina
+                                    Inc.)</li> 
+                                <li>Location: Yen Ching Restaurant</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">Apr. 15, 2023</h5> 
+                            <h5 class = "event-title">KSEA sponsored NMSC/Physics</h5> 
+                            <ul class = "event-description">
+                                <li>13 students participated in the 2023 NMSC.</li> 
+                                <li>3 students participated in the 2023 Physics Competition.</li> 
+                                <li>Five students were awarded the first place certificates (in each group) by the Consul
+                                    General from the Consulate General of the Republic of Korea in Seattle.</li>
+                                <li>Location: Location: ILC402 at Boise State University</li>
+                            </ul>
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/physics.png"/>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">May 26, 2023</h5> 
+                            <h5 class = "event-title">KSEA Boise Idaho Chapter 2023 Spring Membership Drive</h5> 
+                            <ul class = "event-description">
+                                <li>Eight local engineers and their families had a dinner meeting at KSEA Idaho CP’s
+                                    house.</li> 
+                                <li>They were encouraged to participate KSEA memberships as well as academic/social
+                                    events.</li> 
+                                <li>Location: Idaho CP's House</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">Fall 2023</h5> 
+                            <h5 class = "event-title">KSEA Idaho Chapter Drone and Arduino Camp</h5> 
+                            <ul class = "event-description">
+                                <li>Participants: Local K-12 students</li> 
+                                <li>The participating students utilized state-of-the-art technology, such as drones and Arduino microcontrollers, for their STEM activities.</li> 
+                                <li>Date: 5pm – 6pm on Every Friday (September 2023- December 2023).</li>
+                                <li>Location: Idaho Korean School, Boise Idaho</li>
+                            </ul>
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/arduino_camp.png"/>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">September 29, 2023</h5> 
+                            <h5 class = "event-title">KSEA Idaho Chapter Fall Membership Driver 2023</h5> 
+                            <ul class = "event-description">
+                                <li>Participants: Local engineers/scientists/artists and their families.</li> 
+                                <li>Picnic for food and games to encouraged them to sign up KSEA memberships.</li> 
+                                <li>Location: Micron Park (3715-3727 Technology Ln Boise, ID)</li>
+                            </ul>
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/driver.png"/>
+                        </div>
+                    </div>
+                    <div class = "past-event">
+                        <div class = "event">
+                            <h5 class = "event-date">December 20, 2024</h5> 
+                            <h5 class = "event-title">2023 Idaho Chapter Fall Seminar</h5> 
+                            <ul class = "event-description">
+                                <li>Participants: Byung Kim (Speaker), Jae Ryu (UI), Jeunghoon Lee (BSU), Jeong Soo
+                                    Jung (Micron), Jungjoon Ahn (Micron) and Hojoong Kim (Micron)</li> 
+                                <li>The first seminar of KSEA Idaho hold in 2023 for the membership drive.</li> 
+                                <li>Location: Idaho Water Center, Room 218A (322 E Front St, Boise, Idaho 83702) &amp; Yen Ching Restaurant</li>
+                            </ul>
+                        </div>
+                        <div id = "event-picture">
+                            <img src="images/seminar.png"/>
+                        </div>
                     </div>
                 </div>
     
